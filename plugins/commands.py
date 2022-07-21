@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('𝐔𝐏𝐃𝐀𝐓𝐄', url='https://t.me/HevcPsaUpdate')
+                InlineKeyboardButton('𝐔𝐏𝐃𝐀𝐓𝐄', url='https://t.me/PsaUpdates')
             ],
             [
                 InlineKeyboardButton('𝐇𝐄𝐋𝐏', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -42,7 +42,7 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('𝐔𝐏𝐃𝐀𝐓𝐄', url='https://t.me/TeamEvamaria')
+            InlineKeyboardButton('𝐔𝐏𝐃𝐀𝐓𝐄', url='https://t.me/psaupdates')
             ],[
             InlineKeyboardButton('𝐇𝐄𝐋𝐏', callback_data='help'),
             InlineKeyboardButton('𝐀𝐁𝐎𝐔𝐓', callback_data='about')
@@ -85,7 +85,7 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('𝐔𝐏𝐃𝐀𝐓𝐄', url='https://t.me/HevcPsaUpdate')
+            InlineKeyboardButton('𝐔𝐏𝐃𝐀𝐓𝐄', url='https://t.me/PsaUpdates')
             ],[
             InlineKeyboardButton('𝐇𝐄𝐋𝐎', callback_data='help'),
             InlineKeyboardButton('𝐀𝐁𝐎𝐔𝐓', callback_data='about')
